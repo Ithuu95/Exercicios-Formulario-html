@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+   <title>Formulario</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Pesquisa de Opinião sobre Tecnologia da Informação</h1>
+        <form action="#" method="post">
+            <!-- Pergunta 1 -->
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            
+            <!-- Pergunta 3 -->
+            <div class="form-group">
+                <label>Qual área da Tecnologia da Informação você mais se interessa?</label><br>
+                <select id="area-interesse" name="area-interesse">
+                    <option value="desenvolvimento">Desenvolvimento de Software</option>
+                    <option value="redes">Redes e Infraestrutura</option>
+                    <option value="seguranca">Segurança da Informação</option>
+                    <option value="analise">Análise de Sistemas</option>
+                    <option value="suporte">Suporte Técnico</option>
+                </select>
+            </div>
+
+            <!-- Pergunta 4 -->
+            <div class="form-group">
+                <label>Você tem experiência em alguma das seguintes áreas? (Selecione as alternativas que se aplicam a você)</label><br>
+                <input type="checkbox" id="dev" name="experiencia" value="desenvolvimento">
+                <label for="dev">Desenvolvimento de Software</label><br>
+                <input type="checkbox" id="redes" name="experiencia" value="redes">
+                <label for="redes">Redes e Infraestrutura</label><br>
+                <input type="checkbox" id="seguranca" name="experiencia" value="seguranca">
+                <label for="seguranca">Segurança da Informação</label><br>
+                <input type="checkbox" id="analise" name="experiencia" value="analise">
+                <label for="analise">Análise de Sistemas</label><br>
+                <input type="checkbox" id="suporte" name="experiencia" value="suporte">
+                <label for="suporte">Suporte Técnico</label>
+            </div>
+
+            <!-- Pergunta 5 -->
+            <div class="form-group">
+                <label>Para você como está o estado atual da área de T.I no seu país?</label><br>
+                <input type="radio" id="excelente" name="avaliacao" value="excelente">
+                <label for="excelente">Excelente</label><br>
+                <input type="radio" id="otimo" name="avaliacao" value="otimo">
+                <label for="otimo">Otimo</label><br>
+                <input type="radio" id="bom" name="avaliacao" value="bom">
+                <label for="bom">Bom</label><br>
+                <input type="radio" id="ruim" name="avaliacao" value="ruim">
+                <label for="ruim">Horrivel</label>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+  <br>
+  <hr size="5" color="#00c"
+  <h2 align="center">Prencher Dados</h2>
+  <hr size="5" color="#00c"
+  <form name="cad" action="#" method="POST"><br>
+      <label for="name">Nome:</label>
+      <input type="text" name="name" id="name" size="19"><br>
+      <br>
+      <label for="senha">Senha:</label>
+      <input type="password" name"senha" id="senha" maxlenght="15"><br>
+      <br>
+      <label for="idade">Idade:</label>
+      <input type="number" nome="idade" id="idade" size="7"> min="0" max="120"><br>
+      <br>
+      <label for="email">E-mail:</label>
+      <input type="email" name="email" id="email" required>
+      <label for="estcivil">estado civil</label>
+      <select name="estcivil" id="estcivil">
+              <option value="solteiro">solteiro</option>
+              <option value="casado">casado</option>
+              <option value="divorciado">divorciado</option><br>
+      </select>
+      <br>
+      <p>sexo:</p>
+      <label for="masc">masculino</label>
+      <input type="radio" name="sexo" id="masc" value="M"
+      <label for="fem">feminino</label>
+      <input type="radio" name="sexo" id="fem" value="F"<br>
+      <br>
+      <p>Sistema Operacional Utilizado:</p>
+      <label for="Linux">Linux</label>
+      <input type="checkbox" name="Linux" id="Linux" value="Linux"><br>
+      <label for="Windows">Windows</label>
+      <input type="checkbox" name="Windows" id="Windows" value="Windows"><br>
+      <label for="Pop.Os">Pop.Os</label>
+      <input type="checkbox" name="Pop.Os" id="Pop.Os" value="Pop.Os"><br>
+      <label for="Solaris">Solaris</label>
+      <input type="checkbox" name="Solaris" id="Solaris" value="Solaris">
+      <br>
+      <label for="msg">deixe sua mensagem</label>
+      <textarea name="msg" id="msg" value="msg" rows="10" cols="70">
+      </textarea>
+      <br>
+      <input type="submit" nome="Enviar" value="Enviar">
+   </form>
